@@ -1,3 +1,8 @@
+% TRANSLATE FUNCTION
+% This function applies translation, scaling, rotation, and a transformation matrix 
+% to an input image. It returns the transformed image with optional resizing and 
+% interpolation for smooth pixel mapping.
+
 function Translated_image = Translate(Og_image, b, scale, theta, c, Z, W, H)
     arguments
         Og_image

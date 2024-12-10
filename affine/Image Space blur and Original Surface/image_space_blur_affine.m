@@ -1,3 +1,11 @@
+% SHEAR TRANSFORMATION AND SSD SURFACE VISUALIZATION
+% This script evaluates and visualizes the SSD cost surface for image alignment 
+% under varying shear transformations and Gaussian smoothing levels (sigma) with the
+% smoothing applied in the image space. It computes the SSD surface, identifies true
+% and estimated minima, and saves 3D and top-view plots for each sigma value in a
+% designated output folder.
+
+
 % Clean and clear workspace
 clc; clear; close all;
 

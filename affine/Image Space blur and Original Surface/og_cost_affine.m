@@ -1,3 +1,9 @@
+% SHEAR TRANSFORMATION AND SSD VISUALIZATION
+% This script computes and visualizes the SSD cost surface for image
+% alignment under varying shear transformations with no smoothing. 
+% It identifies and compares the true and estimated shear values and saves
+% 3D and top-view plots along with visual comparisons of transformed images.
+
 % Clean and clear workspace
 clc; clear; close all;
 

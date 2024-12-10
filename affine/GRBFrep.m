@@ -1,3 +1,8 @@
+% GRBFrep FUNCTION
+% This function computes a Gaussian Radial Basis Function (GRBF) representation
+% of an input image. Each pixel in the input image is treated as a center of 
+% a Gaussian, weighted by its intensity. The resulting image is the sum of all 
+% these Gaussian contributions.
 function newImage = GRBFrep(I, delta)
     [height, width] = size(I);
     [X, Y] = meshgrid(1:width, 1:height);

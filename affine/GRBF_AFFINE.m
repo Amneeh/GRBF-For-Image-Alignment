@@ -1,3 +1,9 @@
+% SSD SURFACE COMPUTATION AND VISUALIZATION
+% This script computes the Sum of Squared Differences (SSD) cost surface
+% for image alignemnt over a range of shearing in the x and y direction.
+% It generates a transformed image by applying known translation and scaling
+% to a desired image, computes the SSD surface, visualizes it using 3D and
+% contour plots, and highlights the true and estimated minima.
 clc;
 clear;
 close all;

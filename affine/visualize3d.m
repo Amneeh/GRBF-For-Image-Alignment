@@ -1,3 +1,8 @@
+% SHEAR TRANSFORMATION VISUALIZATION AND IMAGE SAVING
+% This script visualizes the SSD cost surface for shear transformations across different 
+% sigma values. It marks the true shear parameters and the estimated minima for each sigma 
+% on 3D surface plots. Results are saved as images in a designated output folder.
+
 % --- Visualization and Image Saving ---
 output_folder = 'output_images_shear'; % Folder to save images
 if ~exist(output_folder, 'dir')

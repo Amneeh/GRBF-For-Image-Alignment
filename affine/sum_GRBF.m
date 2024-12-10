@@ -1,4 +1,9 @@
-
+% sum_GRBF FUNCTION
+% This function computes a mapping using the Sum of Gaussian Radial Basis Functions (GRBFs) representation. 
+% Each pixel in the input image contributes to the mapping (tau) through a Gaussian 
+% kernel centered at a translated position, scaled by a specified factor. 
+% The output is a smooth representation incorporating translation, scaling, 
+% and Gaussian spread.
 function mapping = sum_GRBF(I_c, delta, b, s, n, a, c)
     arguments
         I_c                     % Input image
@@ -24,6 +29,8 @@ function mapping = sum_GRBF(I_c, delta, b, s, n, a, c)
     for i = 1:height
         for j = 1:width
             x_k = [X(i, j); Y(i, j)];
+
+            %%%%%%%%%%%%% Problem %%%%%%%%%%%%%%%
             tau = c * (x_k - [center_x; center_y]) + [center_x; center_y] + c .* b;
 
             % Compute distances as 2D matrix
